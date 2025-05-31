@@ -310,7 +310,7 @@ void handleRoot() {
             <strong>ESP32 Info:</strong><br>
             IP: )" + WiFi.localIP().toString() + R"(<br>
             SSID: )" + WiFi.SSID() + R"(<br>
-            Estado: Conectado ✅
+            Estado: Conectado 
         </div>
 
         <form id='apiForm'>
@@ -339,12 +339,12 @@ void handleRoot() {
                 <textarea id='payload' name='payload' placeholder='{"title": "Test", "body": "Mensaje de prueba", "userId": 1}'></textarea>
             </div>
 
-            <button type='submit'>🚀 Enviar Petición</button>
+            <button type='submit'> Enviar Petición</button>
             <button type='button' onclick='loadStatus()' class='btn-secondary'>🔄 Ver Estado</button>
         </form>
 
         <div id='responseArea' style='display:none'>
-            <h3>📋 Respuesta del Servidor</h3>
+            <h3> Respuesta del Servidor</h3>
             <div id='responseContent'></div>
         </div>
     </div>
